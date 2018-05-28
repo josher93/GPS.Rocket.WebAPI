@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62EDF86B-DDA6-44B5-900E-319932874F23}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YoVendoRecargaAPI.Entities</RootNamespace>
+    <AssemblyName>YoVendoRecargaAPI.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper.SimpleCRUD, Version=1.13.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.SimpleCRUD.1.13.0\lib\net45\Dapper.SimpleCRUD.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AchievementEN.cs" />
+    <Compile Include="AgeEN.cs" />
+    <Compile Include="AgeImagesResponseEN.cs" />
+    <Compile Include="AuthConsumerEN.cs" />
+    <Compile Include="ChangeAgeEN.cs" />
+    <Compile Include="ComboEN.cs" />
+    <Compile Include="ComboSouvenirEN.cs" />
+    <Compile Include="ConsumerAuthEN.cs" />
+    <Compile Include="ConsumerAuthKey.cs" />
+    <Compile Include="ConsumerTokenEN.cs" />
+    <Compile Include="FacebookConsumerEN.cs" />
+    <Compile Include="FacebookEN.cs" />
+    <Compile Include="ForbiddenNicknameEN.cs" />
+    <Compile Include="GamerProfileEN.cs" />
+    <Compile Include="LeaderBoards.cs" />
+    <Compile Include="PlayersTrackingEN.cs" />
+    <Compile Include="PrizeHistoryEN.cs" />
+    <Compile Include="PromotionEN.cs" />
+    <Compile Include="PurchaseEN.cs" />
+    <Compile Include="BankEN.cs" />
+    <Compile Include="BuildVersionEN.cs" />
+    <Compile Include="CampaignEN.cs" />
+    <Compile Include="CountryEN.cs" />
+    <Compile Include="ExternalClientEN.cs" />
+    <Compile Include="GatsTransactionEN.cs" />
+    <Compile Include="NotificationResultEN.cs" />
+    <Compile Include="OperatorEN.cs" />
+    <Compile Include="PersonBagOperatorEN.cs" />
+    <Compile Include="PersonEN.cs" />
+    <Compile Include="ProductEN.cs" />
+    <Compile Include="ProfileEN.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ConsumerEN.cs" />
+    <Compile Include="RecargoAppVersions.cs" />
+    <Compile Include="ResponseTelevida.cs" />
+    <Compile Include="RocketBalanceEN.cs" />
+    <Compile Include="RocketSaleDetailEN.cs" />
+    <Compile Include="SaleEN.cs" />
+    <Compile Include="SessionEN.cs" />
+    <Compile Include="ShopPurchaseEN.cs" />
+    <Compile Include="SouvenirEN.cs" />
+    <Compile Include="StoreEN.cs" />
+    <Compile Include="StoreReportDetailsEN.cs" />
+    <Compile Include="TokenEN.cs" />
+    <Compile Include="TokenResultEN.cs" />
+    <Compile Include="TopupEN.cs" />
+    <Compile Include="TopupRequestEN.cs" />
+    <Compile Include="TopupTransactionEN.cs" />
+    <Compile Include="TrackSouvenirEN.cs" />
+    <Compile Include="UserBagHistoryEN.cs" />
+    <Compile Include="WinCoinEN.cs" />
+    <Compile Include="WinPrizeEN.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

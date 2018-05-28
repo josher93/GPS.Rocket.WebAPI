@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoVendoRecargaAPI.Entities", "YoVendoRecargaAPI.Entities\YoVendoRecargaAPI.Entities.csproj", "{62EDF86B-DDA6-44B5-900E-319932874F23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoVendoRecargaAPI.DAL", "YoVendoRecargaAPI.DAL\YoVendoRecargaAPI.DAL.csproj", "{6D6EDC13-6479-491E-8C94-9B15A6CDC347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoVendoRecargaAPI.BL", "YoVendoRecargaAPI.BL\YoVendoRecargaAPI.BL.csproj", "{6219D82B-CB67-456F-9A7B-165E8022A73F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoVendoRecargaAPI.SVC", "YoVendoRecargaAPI.SVC\YoVendoRecargaAPI.SVC.csproj", "{A29B2311-2BF3-4535-91CF-6682EEA2B26F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoVendoRecargaAPI.Game", "YoVendoRecargaAPI.Game\YoVendoRecargaAPI.Game.csproj", "{3C5026E5-48C4-48F7-B68B-628F69F1AC9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoVendoRecargaAPI.Topup", "YoVendoRecargaAPI.Topup\YoVendoRecargaAPI.Topup.csproj", "{7258E342-AEDB-449B-970F-6E8701F6D614}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoVendoRecargaAPI.WebAPI", "YoVendoRecargaAPI.WebAPI\YoVendoRecargaAPI.WebAPI.csproj", "{18EACA8D-6382-45CE-9700-46EDFB818F7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62EDF86B-DDA6-44B5-900E-319932874F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62EDF86B-DDA6-44B5-900E-319932874F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62EDF86B-DDA6-44B5-900E-319932874F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62EDF86B-DDA6-44B5-900E-319932874F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D6EDC13-6479-491E-8C94-9B15A6CDC347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D6EDC13-6479-491E-8C94-9B15A6CDC347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D6EDC13-6479-491E-8C94-9B15A6CDC347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D6EDC13-6479-491E-8C94-9B15A6CDC347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6219D82B-CB67-456F-9A7B-165E8022A73F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6219D82B-CB67-456F-9A7B-165E8022A73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6219D82B-CB67-456F-9A7B-165E8022A73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6219D82B-CB67-456F-9A7B-165E8022A73F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A29B2311-2BF3-4535-91CF-6682EEA2B26F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A29B2311-2BF3-4535-91CF-6682EEA2B26F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A29B2311-2BF3-4535-91CF-6682EEA2B26F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A29B2311-2BF3-4535-91CF-6682EEA2B26F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C5026E5-48C4-48F7-B68B-628F69F1AC9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C5026E5-48C4-48F7-B68B-628F69F1AC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C5026E5-48C4-48F7-B68B-628F69F1AC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C5026E5-48C4-48F7-B68B-628F69F1AC9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7258E342-AEDB-449B-970F-6E8701F6D614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7258E342-AEDB-449B-970F-6E8701F6D614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7258E342-AEDB-449B-970F-6E8701F6D614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7258E342-AEDB-449B-970F-6E8701F6D614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18EACA8D-6382-45CE-9700-46EDFB818F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18EACA8D-6382-45CE-9700-46EDFB818F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18EACA8D-6382-45CE-9700-46EDFB818F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18EACA8D-6382-45CE-9700-46EDFB818F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://globalpay-tfs.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = YoVendoRecargaAPI.BL\\YoVendoRecargaAPI.BL.csproj
+		SccProjectName1 = YoVendoRecargaAPI.BL
+		SccLocalPath1 = YoVendoRecargaAPI.BL
+		SccProjectUniqueName2 = YoVendoRecargaAPI.DAL\\YoVendoRecargaAPI.DAL.csproj
+		SccProjectName2 = YoVendoRecargaAPI.DAL
+		SccLocalPath2 = YoVendoRecargaAPI.DAL
+		SccProjectUniqueName3 = YoVendoRecargaAPI.Entities\\YoVendoRecargaAPI.Entities.csproj
+		SccProjectName3 = YoVendoRecargaAPI.Entities
+		SccLocalPath3 = YoVendoRecargaAPI.Entities
+		SccProjectUniqueName4 = YoVendoRecargaAPI.Game\\YoVendoRecargaAPI.Game.csproj
+		SccProjectName4 = YoVendoRecargaAPI.Game
+		SccLocalPath4 = YoVendoRecargaAPI.Game
+		SccProjectUniqueName5 = YoVendoRecargaAPI.SVC\\YoVendoRecargaAPI.SVC.csproj
+		SccProjectName5 = YoVendoRecargaAPI.SVC
+		SccLocalPath5 = YoVendoRecargaAPI.SVC
+		SccProjectUniqueName6 = YoVendoRecargaAPI.Topup\\YoVendoRecargaAPI.Topup.csproj
+		SccProjectName6 = YoVendoRecargaAPI.Topup
+		SccLocalPath6 = YoVendoRecargaAPI.Topup
+		SccProjectUniqueName7 = YoVendoRecargaAPI.WebAPI\\YoVendoRecargaAPI.WebAPI.csproj
+		SccProjectName7 = YoVendoRecargaAPI.WebAPI
+		SccLocalPath7 = YoVendoRecargaAPI.WebAPI
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{18EACA8D-6382-45CE-9700-46EDFB818F7B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YoVendoRecargaAPI.WebAPI</RootNamespace>
+    <AssemblyName>YoVendoRecargaAPI.WebAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net451\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.1.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.1.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.1.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.1.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.1.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Assets\images\MobileNetworkOperators\cr\" />
+    <Folder Include="Assets\images\MobileNetworkOperators\gt\" />
+    <Folder Include="Assets\images\MobileNetworkOperators\hn\" />
+    <Folder Include="Assets\images\MobileNetworkOperators\ni\" />
+    <Folder Include="Assets\images\MobileNetworkOperators\pa\" />
+    <Folder Include="Assets\images\WebView\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AchievementController.cs" />
+    <Compile Include="Controllers\AgeController.cs" />
+    <Compile Include="Controllers\AuthenticationController.cs" />
+    <Compile Include="Controllers\BalanceRequestController.cs" />
+    <Compile Include="Controllers\BankController.cs" />
+    <Compile Include="Controllers\BankReferenceController.cs" />
+    <Compile Include="Controllers\BuildValidatorController.cs" />
+    <Compile Include="Controllers\CountriesController.cs" />
+    <Compile Include="Controllers\ExchangeController.cs" />
+    <Compile Include="Controllers\ExternalClientController.cs" />
+    <Compile Include="Controllers\FacebookController.cs" />
+    <Compile Include="Controllers\GamerProfileController.cs" />
+    <Compile Include="Controllers\GameStoreController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LeaderBoardsController.cs" />
+    <Compile Include="Controllers\PromotionController.cs" />
+    <Compile Include="Controllers\SouvenirController.cs" />
+    <Compile Include="Interactors\AchievementInteractor.cs" />
+    <Compile Include="Interactors\AgeInteractor.cs" />
+    <Compile Include="Interactors\CombosEN.cs" />
+    <Compile Include="Interactors\ExchangeWildcard.cs" />
+    <Compile Include="Interactors\GameStoreInteractor.cs" />
+    <Compile Include="Interactors\PromotionInteractor.cs" />
+    <Compile Include="Interactors\ShopPurchaseInteractor.cs" />
+    <Compile Include="Interactors\SouvenirInteractor.cs" />
+    <Compile Include="Models\AchievementsByConsumerResponse.cs" />
+    <Compile Include="Models\ActivatePrizeInteractor.cs" />
+    <Compile Include="Models\ActivatePrizeRequest.cs" />
+    <Compile Include="Models\ActivatePrizeResponse.cs" />
+    <Compile Include="Models\AgeImagesCollectionResponse.cs" />
+    <Compile Include="Models\AgeResponse.cs" />
+    <Compile Include="Models\Ages.cs" />
+    <Compile Include="Models\AgesListModel.cs" />
+    <Compile Include="Models\ChangeAgeResponse.cs" />
+    <Compile Include="Models\CombosResponse.cs" />
+    <Compile Include="Models\ExchangeComboRequest.cs" />
+    <Compile Include="Models\ExchangeSouvenirRequest.cs" />
+    <Compile Include="Models\GamerProfileReq.cs" />
+    <Compile Include="Models\GameStoreResponse.cs" />
+    <Compile Include="Models\NewAchievement.cs" />
+    <Compile Include="Models\NicknameReq.cs" />
+    <Compile Include="Controllers\NotificationsController.cs" />
+    <Compile Include="Controllers\OperatorsController.cs" />
+    <Compile Include="Controllers\PrizeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\ProfileController.cs" />
+    <Compile Include="Controllers\ConsumerController.cs" />
+    <Compile Include="Controllers\SalesHistoryController.cs" />
+    <Compile Include="Controllers\StoresController.cs" />
+    <Compile Include="Controllers\TokenController.cs" />
+    <Compile Include="Controllers\TopupController.cs" />
+    <Compile Include="Controllers\TrackingController.cs" />
+    <Compile Include="Controllers\UserBagController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Interactors\BalanceRequestInteractor.cs" />
+    <Compile Include="Interactors\BankInteractor.cs" />
+    <Compile Include="Interactors\BuildValidatorInteractor.cs" />
+    <Compile Include="Interactors\ConsumerInteractor.cs" />
+    <Compile Include="Interactors\DepositInteractor.cs" />
+    <Compile Include="Interactors\ExchangeCoinsInteractor.cs" />
+    <Compile Include="Interactors\FacebookInteractor.cs" />
+    <Compile Include="Interactors\LeaderBoardsInteractor.cs" />
+    <Compile Include="Interactors\NotificationsInteractor.cs" />
+    <Compile Include="Interactors\OperatorsInteractors.cs" />
+    <Compile Include="Interactors\ProductsInteractor.cs" />
+    <Compile Include="Interactors\ProfileInteractor.cs" />
+    <Compile Include="Interactors\SalesHistoryInteractor.cs" />
+    <Compile Include="Interactors\SigninInteractor.cs" />
+    <Compile Include="Interactors\TopupInteractor.cs" />
+    <Compile Include="Interactors\UserBagInteractor.cs" />
+    <Compile Include="Interactors\WinPrizeInteractor.cs" />
+    <Compile Include="IResponse.cs" />
+    <Compile Include="Models\BalanceRequest.cs" />
+    <Compile Include="Models\BalanceRequestResponse.cs" />
+    <Compile Include="Models\Bank.cs" />
+    <Compile Include="Models\BankDepositoReqBody.cs" />
+    <Compile Include="Models\BankDepositResponse.cs" />
+    <Compile Include="Models\BankList.cs" />
+    <Compile Include="Models\BankResponse.cs" />
+    <Compile Include="Models\BuildResponse.cs" />
+    <Compile Include="Models\BuildValidationReqBody.cs" />
+    <Compile Include="Models\CountryOperators.cs" />
+    <Compile Include="Models\CountryResponse.cs" />
+    <Compile Include="Models\DepositValidationRequest.cs" />
+    <Compile Include="Models\ExchangeCoinsResponse.cs" />
+    <Compile Include="Models\ExchangeDataRequest.cs" />
+    <Compile Include="Models\ExternalClientData.cs" />
+    <Compile Include="Models\ExternalClientResponse.cs" />
+    <Compile Include="Models\GenericApiResponse.cs" />
+    <Compile Include="Models\HistoryResponse.cs" />
+    <Compile Include="Models\Info.cs" />
+    <Compile Include="Models\LeaderBoardsRequest.cs" />
+    <Compile Include="Models\LeaderBoardsResponse.cs" />
+    <Compile Include="Models\MassivePushItemResult.cs" />
+    <Compile Include="Models\MassivePushResult.cs" />
+    <Compile Include="Models\NotificationContentRequest.cs" />
+    <Compile Include="Models\NotificationItem.cs" />
+    <Compile Include="Models\NotificationMessages.cs" />
+    <Compile Include="Models\NotificationResult.cs" />
+    <Compile Include="Models\NotificationsResponse.cs" />
+    <Compile Include="Models\NotificationTrackingReq.cs" />
+    <Compile Include="Models\OperatorBalance.cs" />
+    <Compile Include="Models\OperatorProduct.cs" />
+    <Compile Include="Models\OperatorProductsResponse.cs" />
+    <Compile Include="Models\Operators.cs" />
+    <Compile Include="Models\OperatorsProducts.cs" />
+    <Compile Include="Models\OperatorsResponse.cs" />
+    <Compile Include="Models\PaymentsListResponse.cs" />
+    <Compile Include="Models\PaymentsRocketResponse.cs" />
+    <Compile Include="Models\PendingRequests.cs" />
+    <Compile Include="Models\PendingTopupReq.cs" />
+    <Compile Include="Models\PhoneConsumerResponse.cs" />
+    <Compile Include="Models\PrizeHistoryResponse.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductsResponse.cs" />
+    <Compile Include="Models\ProfileResponse.cs" />
+    <Compile Include="Models\PromotionsResponse.cs" />
+    <Compile Include="Models\PurchaseRequest.cs" />
+    <Compile Include="Models\RegisterPhoneReqBody.cs" />
+    <Compile Include="Models\ResgisterConsumerResponse.cs" />
+    <Compile Include="Models\RGBColors.cs" />
+    <Compile Include="Models\RocketBalance.cs" />
+    <Compile Include="Models\RocketRequest.cs" />
+    <Compile Include="Models\RocketSaleDetail.cs" />
+    <Compile Include="Models\RocketSalesDetailResponse.cs" />
+    <Compile Include="Models\Sale.cs" />
+    <Compile Include="Models\SaleDetailListResponse.cs" />
+    <Compile Include="Models\SalePaymentReq.cs" />
+    <Compile Include="Models\SalePaymentResponse.cs" />
+    <Compile Include="Models\ShopPurchaseResponse.cs" />
+    <Compile Include="Models\SigninReqBody.cs" />
+    <Compile Include="Models\SigninResponse.cs" />
+    <Compile Include="Models\SignoutResponse.cs" />
+    <Compile Include="Models\SimpleTextResponse.cs" />
+    <Compile Include="Models\SouvenirResponse.cs" />
+    <Compile Include="Models\SouvenirsByConsumerResponse.cs" />
+    <Compile Include="Models\StoreAttributes.cs" />
+    <Compile Include="Models\TokenValidationReq.cs" />
+    <Compile Include="Models\TopupProducts.cs" />
+    <Compile Include="Models\TopupRequest.cs" />
+    <Compile Include="Models\TopupRequestItem.cs" />
+    <Compile Include="Models\TopupRequestsResponse.cs" />
+    <Compile Include="Models\TopupResultResponse.cs" />
+    <Compile Include="Models\TopupRequestReq.cs" />
+    <Compile Include="Models\TrackingResponse.cs" />
+    <Compile Include="Models\TransactionsResponse.cs" />
+    <Compile Include="Models\UserBag.cs" />
+    <Compile Include="Models\UserBagResponse.cs" />
+    <Compile Include="Models\UserFacebookReqBody.cs" />
+    <Compile Include="Models\UserProfile.cs" />
+    <Compile Include="Models\WinPrizeResponse.cs" />
+    <Compile Include="Models\WinPrizeWildcardResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Assets\images\MobileNetworkOperators\sv\claro_logo.png" />
+    <Content Include="Assets\images\MobileNetworkOperators\sv\digicel_logo.png" />
+    <Content Include="Assets\images\MobileNetworkOperators\sv\movistar_logo.png" />
+    <Content Include="Assets\images\MobileNetworkOperators\sv\tigo_logo.png" />
+    <Content Include="bin\YoVendoRecargaAPI.WebAPI.dll" />
+    <Content Include="bin\YoVendoRecargaAPI.WebAPI.pdb" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Properties\PublishProfiles\YoVendoRecargaAPI.pubxml" />
+    <Content Include="Repository\LeaderBoards.json" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YoVendoRecargaAPI.BL\YoVendoRecargaAPI.BL.csproj">
+      <Project>{6219d82b-cb67-456f-9a7b-165e8022a73f}</Project>
+      <Name>YoVendoRecargaAPI.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YoVendoRecargaAPI.Entities\YoVendoRecargaAPI.Entities.csproj">
+      <Project>{62edf86b-dda6-44b5-900e-319932874f23}</Project>
+      <Name>YoVendoRecargaAPI.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YoVendoRecargaAPI.Game\YoVendoRecargaAPI.Game.csproj">
+      <Project>{3c5026e5-48c4-48f7-b68b-628f69f1ac9f}</Project>
+      <Name>YoVendoRecargaAPI.Game</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YoVendoRecargaAPI.SVC\YoVendoRecargaAPI.SVC.csproj">
+      <Project>{a29b2311-2bf3-4535-91cf-6682eea2b26f}</Project>
+      <Name>YoVendoRecargaAPI.SVC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YoVendoRecargaAPI.Topup\YoVendoRecargaAPI.Topup.csproj">
+      <Project>{7258e342-aedb-449b-970f-6e8701f6d614}</Project>
+      <Name>YoVendoRecargaAPI.Topup</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61121</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61121/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

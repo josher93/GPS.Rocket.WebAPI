@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://principal.claro.com/" targetNamespace="http://principal.claro.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="activarPinPromocional" type="tns:activarPinPromocional" />
+  <xs:element name="activarPinPromocionalResponse" type="tns:activarPinPromocionalResponse" />
+  <xs:complexType name="activarPinPromocional">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="pin" type="xs:string" />
+      <xs:element minOccurs="0" name="procedencia" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="activarPinPromocionalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

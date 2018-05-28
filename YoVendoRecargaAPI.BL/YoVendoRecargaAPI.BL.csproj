@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6219D82B-CB67-456F-9A7B-165E8022A73F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YoVendoRecargaAPI.BL</RootNamespace>
+    <AssemblyName>YoVendoRecargaAPI.BL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="jose-jwt, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jose-jwt.1.4.0\lib\4.0\jose-jwt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mandrill, Version=1.0.109.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\mandrill\Mandrill.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Security.Cryptography, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jose-jwt.1.4.0\lib\4.0\Security.Cryptography.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AchievementBL.cs" />
+    <Compile Include="BagBL.cs" />
+    <Compile Include="BalanceRequestBL.cs" />
+    <Compile Include="BankBL.cs" />
+    <Compile Include="BankDepositBL.cs" />
+    <Compile Include="BuildVersionBL.cs" />
+    <Compile Include="CampaignBL.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="SouvenirBL.cs" />
+    <Compile Include="Utils\Constants.cs" />
+    <Compile Include="ConsumerTokenBL.cs" />
+    <Compile Include="CountryBL.cs" />
+    <Compile Include="PromotionBL.cs" />
+    <Compile Include="SessionBL.cs" />
+    <Compile Include="Utils\EmailSender.cs" />
+    <Compile Include="Utils\Encrypt.cs" />
+    <Compile Include="Utils\EventViewerLoggerBL.cs" />
+    <Compile Include="ExternalClientBL.cs" />
+    <Compile Include="FacebookBL.cs" />
+    <Compile Include="OperatorBL.cs" />
+    <Compile Include="PersonBL.cs" />
+    <Compile Include="ProductBL.cs" />
+    <Compile Include="ProfileBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseBL.cs" />
+    <Compile Include="ConsumerBL.cs" />
+    <Compile Include="SaleBL.cs" />
+    <Compile Include="StoreBL.cs" />
+    <Compile Include="Utils\JWT.cs" />
+    <Compile Include="Utils\SimpleOperationModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YoVendoRecargaAPI.DAL\YoVendoRecargaAPI.DAL.csproj">
+      <Project>{6d6edc13-6479-491e-8c94-9b15a6cdc347}</Project>
+      <Name>YoVendoRecargaAPI.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YoVendoRecargaAPI.Entities\YoVendoRecargaAPI.Entities.csproj">
+      <Project>{62edf86b-dda6-44b5-900e-319932874f23}</Project>
+      <Name>YoVendoRecargaAPI.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YoVendoRecargaAPI.SVC\YoVendoRecargaAPI.SVC.csproj">
+      <Project>{a29b2311-2bf3-4535-91cf-6682eea2b26f}</Project>
+      <Name>YoVendoRecargaAPI.SVC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bin\mandrill\Mandrill.dll.refresh" />
+    <None Include="bin\Release\YoVendoRecargaAPI.BL.dll.config" />
+    <None Include="LICENSE" />
+    <None Include="MsLPL" />
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\YoVendoRecargaAPI.BL.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\YoVendoRecargaAPI.BL.csprojResolveAssemblyReference.cache" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\mandrill\Mandrill.dll" />
+    <Content Include="bin\Release\Dapper.dll" />
+    <Content Include="bin\Release\Dapper.SimpleCRUD.dll" />
+    <Content Include="bin\Release\Dapper.SimpleCRUD.pdb" />
+    <Content Include="bin\Release\Dapper.SimpleCRUD.xml" />
+    <Content Include="bin\Release\Dapper.xml" />
+    <Content Include="bin\Release\InteractuaMovil.ContactoSms.Api.dll" />
+    <Content Include="bin\Release\JamaaTech.Smpp.Net.Client.v1.4.dll" />
+    <Content Include="bin\Release\JamaaTech.Smpp.Net.Lib.v1.4.dll" />
+    <Content Include="bin\Release\jose-jwt.dll" />
+    <Content Include="bin\Release\Mandrill.dll" />
+    <Content Include="bin\Release\Microsoft.Azure.Management.Engagement.dll" />
+    <Content Include="bin\Release\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
+    <Content Include="bin\Release\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="bin\Release\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="bin\Release\Microsoft.Rest.ClientRuntime.Azure.Authentication.dll" />
+    <Content Include="bin\Release\Microsoft.Rest.ClientRuntime.Azure.dll" />
+    <Content Include="bin\Release\Microsoft.Rest.ClientRuntime.dll" />
+    <Content Include="bin\Release\Newtonsoft.Json.dll" />
+    <Content Include="bin\Release\RestSharp.dll" />
+    <Content Include="bin\Release\RestSharp.xml" />
+    <Content Include="bin\Release\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="bin\Release\Twilio.dll" />
+    <Content Include="bin\Release\YoVendoRecargaAPI.BL.dll" />
+    <Content Include="bin\Release\YoVendoRecargaAPI.BL.pdb" />
+    <Content Include="bin\Release\YoVendoRecargaAPI.DAL.dll" />
+    <Content Include="bin\Release\YoVendoRecargaAPI.DAL.pdb" />
+    <Content Include="bin\Release\YoVendoRecargaAPI.Entities.dll" />
+    <Content Include="bin\Release\YoVendoRecargaAPI.Entities.pdb" />
+    <Content Include="bin\Release\YoVendoRecargaAPI.SVC.dll" />
+    <Content Include="bin\Release\YoVendoRecargaAPI.SVC.pdb" />
+    <Content Include="obj\Debug\YoVendoRecargaAPI.BL.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\YoVendoRecargaAPI.BL.dll" />
+    <Content Include="obj\Debug\YoVendoRecargaAPI.BL.pdb" />
+    <Content Include="obj\Release\YoVendoRecargaAPI.BL.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\YoVendoRecargaAPI.BL.dll" />
+    <Content Include="obj\Release\YoVendoRecargaAPI.BL.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

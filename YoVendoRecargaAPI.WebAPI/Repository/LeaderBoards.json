@@ -1,0 +1,195 @@
+[
+  {
+    "Leaderboards": [
+      {
+        "Nickname": "edgardojc",
+        "TotalCoins": 600
+      },
+      {
+        "Nickname": "DiegoAHA",
+        "TotalCoins": 479
+      },
+      {
+        "Nickname": "Emmilio",
+        "TotalCoins": 304
+      },
+      {
+        "Nickname": "Emiliio",
+        "TotalCoins": 236
+      },
+      {
+        "Nickname": "Eli1789",
+        "TotalCoins": 214
+      },
+      {
+        "Nickname": "Victor",
+        "TotalCoins": 135
+      },
+      {
+        "Nickname": "gustavo1986",
+        "TotalCoins": 130
+      },
+      {
+        "Nickname": "jaz0486",
+        "TotalCoins": 127
+      },
+      {
+        "Nickname": "Alejo_Hego",
+        "TotalCoins": 95
+      },
+      {
+        "Nickname": "EduardoM1",
+        "TotalCoins": 86
+      }
+    ],
+    "LastWinner": {
+      "Nickname": "blademaster28",
+      "TotalCoins": 1458
+    },
+    "filter": "Today"
+  },
+  {
+    "Leaderboards": [
+      {
+        "Nickname": "Keren",
+        "TotalCoins": 1233
+      },
+      {
+        "Nickname": "DiegoAHA",
+        "TotalCoins": 890
+      },
+      {
+        "Nickname": "marielos",
+        "TotalCoins": 832
+      },
+      {
+        "Nickname": "edgardojc",
+        "TotalCoins": 791
+      },
+      {
+        "Nickname": "itchyfrank",
+        "TotalCoins": 761
+      },
+      {
+        "Nickname": "Emmilio",
+        "TotalCoins": 741
+      },
+      {
+        "Nickname": "Eli1789",
+        "TotalCoins": 706
+      },
+      {
+        "Nickname": "CISCO",
+        "TotalCoins": 624
+      },
+      {
+        "Nickname": "chicken69",
+        "TotalCoins": 456
+      },
+      {
+        "Nickname": "EduardoM1",
+        "TotalCoins": 429
+      }
+    ],
+    "LastWinner": {
+      "Nickname": "Eli1789",
+      "TotalCoins": 3510
+    },
+    "filter": "Week"
+  },
+  {
+    "Leaderboards": [
+      {
+        "Nickname": "Eli1789",
+        "TotalCoins": 5044
+      },
+      {
+        "Nickname": "edgardojc",
+        "TotalCoins": 2714
+      },
+      {
+        "Nickname": "DiegoAHA",
+        "TotalCoins": 2403
+      },
+      {
+        "Nickname": "Keren",
+        "TotalCoins": 2297
+      },
+      {
+        "Nickname": "Shambita",
+        "TotalCoins": 2137
+      },
+      {
+        "Nickname": "itchyfrank",
+        "TotalCoins": 2063
+      },
+      {
+        "Nickname": "CISCO",
+        "TotalCoins": 2054
+      },
+      {
+        "Nickname": "EnriqMejia",
+        "TotalCoins": 2038
+      },
+      {
+        "Nickname": "Elvismadrid",
+        "TotalCoins": 1770
+      },
+      {
+        "Nickname": "Villeda",
+        "TotalCoins": 1719
+      }
+    ],
+    "LastWinner": {
+      "Nickname": "DiegoAHA",
+      "TotalCoins": 22000
+    },
+    "filter": "Month"
+  },
+  {
+    "Leaderboards": [
+      {
+        "Nickname": "DiegoAHA",
+        "TotalCoins": 24403
+      },
+      {
+        "Nickname": "Gustavo98",
+        "TotalCoins": 12669
+      },
+      {
+        "Nickname": "Eli1789",
+        "TotalCoins": 12451
+      },
+      {
+        "Nickname": "asosa",
+        "TotalCoins": 12218
+      },
+      {
+        "Nickname": "Sauljordan",
+        "TotalCoins": 9533
+      },
+      {
+        "Nickname": "Olizama",
+        "TotalCoins": 8298
+      },
+      {
+        "Nickname": "EnriqMejia",
+        "TotalCoins": 7700
+      },
+      {
+        "Nickname": "Eportillo",
+        "TotalCoins": 7256
+      },
+      {
+        "Nickname": "Villeda",
+        "TotalCoins": 5960
+      },
+      {
+        "Nickname": "cess",
+        "TotalCoins": 5909
+      }
+    ],
+    "LastWinner": null,
+    "filter": "OverAll"
+  }
+]

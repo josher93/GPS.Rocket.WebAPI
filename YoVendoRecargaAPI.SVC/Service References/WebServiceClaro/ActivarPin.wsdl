@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://principal.claro.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="ActivarPin" targetNamespace="http://principal.claro.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="ActivarPin.xsd" namespace="http://principal.claro.com/" />
+    </xsd:schema>
+  </types>
+  <message name="activarPinPromocional">
+    <part name="parameters" element="tns:activarPinPromocional" />
+  </message>
+  <message name="activarPinPromocionalResponse">
+    <part name="parameters" element="tns:activarPinPromocionalResponse" />
+  </message>
+  <portType name="ActivarPin">
+    <operation name="activarPinPromocional">
+      <input wsam:Action="http://principal.claro.com/ActivarPin/activarPinPromocionalRequest" message="tns:activarPinPromocional" />
+      <output wsam:Action="http://principal.claro.com/ActivarPin/activarPinPromocionalResponse" message="tns:activarPinPromocionalResponse" />
+    </operation>
+  </portType>
+  <binding name="ActivarPinPortBinding" type="tns:ActivarPin">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="activarPinPromocional">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ActivarPin">
+    <port name="ActivarPinPort" binding="tns:ActivarPinPortBinding">
+      <soap:address location="http://172.24.4.243:8085/ActivarPinClaro/ActivarPin" />
+    </port>
+  </service>
+</definitions>
